@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h2>ChatApp</h2>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Update</li>
+            <li>Status</li>
+            <li>Setting</li>
+        </ul>
+    </nav>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/logo.png" alt="">
+            <h1>MyChatApp</h1>
+        </div>
+        <div class="message__area">
+            <!-- <div class="incoming message">
+                <h4>Nehal</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, minima.</p>
+            </div>
+            <div class="outgoing message">
+                <h4>Afzal</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, minima.</p>
+            </div> -->
+        </div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>

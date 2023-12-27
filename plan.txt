@@ -1,0 +1,11 @@
+{1-done}. craete NPM Project using Terminal
+
+{2.done}. create index, css,js file
+
+{3.done}. install dependencies Like express, nodemon(dev dependencies)
+
+{4. done}. create express server(server.js)
+
+{5. done}.  install socket.io , setup socket.io in server.js and client.js
+
+{6.done}.  client send message logic in client.js
