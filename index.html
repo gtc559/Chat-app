@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chat app</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyD80nUAdG7aiT/Z86Lg8WJQe9qD2FbYbM"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <h2>ChatApp</h2>
-        </div>
-        <ul>
-            <li>Home</li>
-            <li>Update</li>
-            <li>Status</li>
-            <li>Setting</li>
-        </ul>
-    </nav>
+  <body>
     <section class="chat__section">
-        <div class="brand">
-            <img height="40" src="/logo.png" alt="">
-            <h1>MyChatApp</h1>
-        </div>
-        <div class="message__area">
-            <!-- <div class="incoming message">
+      <div class="additional-options">
+        <a id="btn3" title="Additional options">
+          <i class="fa fa-circle"></i>
+        </a>
+      </div>
+      <div class="brand">
+        <!-- heartbeat1: {
+          '0%': {
+            boxShadow: '6px 6px 60px #7562e0',
+            transform: 'translateY(-25%)',
+            animationTimingFunction: 'cubic-bezier(0.8,0,1,1)'
+          },
+          '50%': {
+            boxShadow: '2px 2px 20px #7562e0',
+            transform: ' none',
+            animationTimingFunction: 'cubic-bezier(0,0,0.2,1)'
+          },
+
+          '100%': {
+
+            boxShadow: '6px 6px 60px #7562e0',
+            transform: 'translateY(-25%)',
+            animationTimingFunction: 'cubic-bezier(0.8,0,1,1)'
+          } -->
+        <img height="40" src="/wh1.png" alt="" />
+        <h1>MyChat</h1>
+        <h1>...</h1>
+      </div>
+      <div class="message__area">
+        <!-- <div class="incoming message">
                 <h4>Nehal</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, minima.</p>
             </div>
@@ -34,13 +52,19 @@
                 <h4>Afzal</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, minima.</p>
             </div> -->
-        </div>
-        <div>
-            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
-        </div>
+      </div>
+      <div class="typebox">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Enter your message"
+        />
+        <button id="send-message">
+          <i class="fas fa-angle-double-right" style="font-size: 36px"></i>
+        </button>
+      </div>
     </section>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/client.js"></script>
-</body>
-
+  </body>
 </html>
